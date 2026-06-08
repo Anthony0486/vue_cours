@@ -1,18 +1,18 @@
 <template>
-  <h1 className="text-5xl font-bold">Profil</h1>
-<div className="card card-side bg-base-100 shadow-sm">
+  <h1 class="text-5xl font-bold">Profil</h1>
+<div class="card card-side bg-base-100 shadow-sm">
   <figure>
     <img
       v-bind:src="mario"
       alt="Movie" />
   </figure>
-  <div className="card-body">
-    <h1 className="card-title">{{ user.name }}</h1>
+  <div class="card-body">
+    <h1 class="card-title">{{ user.name }}</h1>
     <p>Âge: {{ user.age }}</p>
     <p>Son chiffre favori: {{ fetish() }}</p>
     <p>Son âge dans 10 ans: {{ ageIncrement() }}</p>
-    <input type="text" v-bind:value="user.name" className="input input-bordered input-primary w-full max-w-xs" />
-    <div className="card-actions justify-end">
+    <input type="text" v-bind:value="user.name" class="input input-bordered input-primary w-full max-w-xs" />
+    <div class="card-actions justify-end">
     </div>
   </div>
 </div>

@@ -1,25 +1,29 @@
 <template>
-    <div className="navbar bg-base-100 shadow-sm">
-  <div className="flex-1">
-    <a className="btn btn-ghost text-xl"> <RouterLink to="/">MySpace</RouterLink></a>
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl"> <RouterLink to="/">MySpace</RouterLink></a>
   </div>
-  <div className="flex gap-2">
-    <input type="checkbox" value="synthwave" className="toggle theme-controller" />
-    <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
-    <div className="dropdown dropdown-end">
+  <div class="flex gap-2">
+    <label class="flex cursor-pointer gap-2">
+  <span class="label-text">Clair</span>
+  <input v-on:click="darkTheme" type="checkbox" value="synthwave" class="toggle theme-controller" />
+  <span class="label-text">Obscur</span>
+</label>
+    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+    <div class="dropdown dropdown-end">
         
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+        <div class="w-10 rounded-full">
           <img
             alt="Tailwind CSS Navbar component"
             src="/public/mario.jpg" />
         </div>
       </div>
       <ul
-        tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><RouterLink className="justify-between" to="/profile">Profile</RouterLink>
-            <span className="badge">New</span>
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><RouterLink class="justify-between" to="/profile">Profile</RouterLink>
+            <span class="badge">New</span>
           </li>
         <li><RouterLink to="/about">A Propos</RouterLink></li>
         <li><RouterLink to="/contact">Contact</RouterLink></li>
@@ -29,6 +33,9 @@
 </div>
 </template>
 
-
-      
-      
+<script setup>
+const darkTheme = () => {
+  const body = document.querySelector('body');
+  body.dataset.theme = body.dataset.theme === 'light' ? 'dark' : 'light';
+};
+</script>
