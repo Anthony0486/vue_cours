@@ -12,7 +12,7 @@
         <div className="w-10 rounded-full">
           <img
             alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" />
+            src="/public/mario.jpg" />
         </div>
       </div>
       <ul
