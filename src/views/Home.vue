@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import EventForm from './EventForm.vue';
 
 // const random = function(){
 //     let result = Math.random();
@@ -23,11 +24,13 @@ const decrement = () => {
 </script>
 
 <template>
+  
   <div class="flex  items-center justify-center gap-4 counter-card">
   <button v-on:click="increment" class="btn btn-success">+</button>
   <div class="badge badge-neutral">{{ counter }}</div>
   <button v-on:click="decrement" class="btn btn-error">-</button>
   </div>
+  <EventForm />
   <!-- <div class="min-h-screen flex flex-col bg-base-200 text-base-content"> -->
         <!-- <AppHeader /> -->
     <!-- Conteneur principal du contenu, centré et responsive -->

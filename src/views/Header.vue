@@ -3,7 +3,7 @@
   <div class="flex-1">
     <a class="btn btn-ghost text-xl"> <RouterLink to="/">MySpace</RouterLink></a>
   </div>
-  <div class="flex gap-2">
+  <div class="flex items-center gap-2">
     <label class="flex cursor-pointer gap-2">
   <span class="label-text">Clair</span>
   <input v-on:click="darkTheme" type="checkbox" value="synthwave" class="toggle theme-controller" />
