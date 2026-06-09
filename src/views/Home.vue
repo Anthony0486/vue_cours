@@ -1,6 +1,9 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
+import { computed } from 'vue';
 import EventForm from './EventForm.vue';
+import Poke from './Poke.vue';
+import Mystery from './Mystery.vue';
 
 // const random = function(){
 //     let result = Math.random();
@@ -19,6 +22,18 @@ const increment  = () => {
 const decrement = () => {
   counter.value--;
 };
+const userName = ref('Marcel');
+
+const showUserName = computed(() => {
+  console.log('La fonction user à été exécutée');
+  if (userName !== ''){
+    console.log('test');
+    return userName;
+  }else {
+    console.log('un autre test');
+  }
+})
+
 
 
 </script>
@@ -30,7 +45,16 @@ const decrement = () => {
   <div class="badge badge-neutral">{{ counter }}</div>
   <button v-on:click="decrement" class="btn btn-error">-</button>
   </div>
+  <hr/>
+  <div>
+    <p>{{ showUserName }}</p>
+  </div>
+   <hr/>
+  <Mystery/>
+   <hr/>
   <EventForm />
+   <hr/>
+  <Poke/>
   <!-- <div class="min-h-screen flex flex-col bg-base-200 text-base-content"> -->
         <!-- <AppHeader /> -->
     <!-- Conteneur principal du contenu, centré et responsive -->
