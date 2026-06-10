@@ -6,6 +6,7 @@ import Mystery from './Mystery.vue';
 import Colorcards from './Colorcards.vue';
 import StyleForm from './StyleForm.vue';
 import WatchList from './WatchList.vue';
+import Todo from './Todo.vue';
 // const random = function(){
 //     let result = Math.random();
 //     if (result < 0.5){
@@ -40,6 +41,8 @@ const showUserName = computed(() => {
 </script>
 
 <template>
+  <Todo/>
+  <hr/>
   <WatchList/>
   <hr/>
   <StyleForm/>
