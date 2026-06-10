@@ -5,6 +5,7 @@ import Poke from './Poke.vue';
 import Mystery from './Mystery.vue';
 import Colorcards from './Colorcards.vue';
 import StyleForm from './StyleForm.vue';
+import WatchList from './WatchList.vue';
 // const random = function(){
 //     let result = Math.random();
 //     if (result < 0.5){
@@ -39,6 +40,8 @@ const showUserName = computed(() => {
 </script>
 
 <template>
+  <WatchList/>
+  <hr/>
   <StyleForm/>
   <hr/>
   <Colorcards/>

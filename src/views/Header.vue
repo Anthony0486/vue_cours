@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar bg-base-100 shadow-sm">
+    <div class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
   <div class="flex-1">
     <a class="btn btn-ghost text-xl"> <RouterLink to="/">MySpace</RouterLink></a>
   </div>
