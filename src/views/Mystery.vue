@@ -28,6 +28,7 @@ watch(result, (newValue) => {
   <div
     class="p-8 pt-8 flex items-center justify-center gap-4 counter-card card bg-base-100 shadow-xl"
   >
+  <h1 class="p-8 text-3xl font-bold md:text-4xl">Nombre Mystère 🔍</h1>
     <button v-on:click="result++" class="btn btn-success">+1</button>
     <button v-on:click="result = result + 5" class="btn btn-error">+5</button>
     <p>{{ result }}</p>

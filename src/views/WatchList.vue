@@ -5,10 +5,10 @@ const filmList = ref([]);
 const filmName = ref('');
 
 const addFilm = (film) => {
-    filmList.value.push(film);
+    filmList.value.push(film.trim());
 };
 const deleteFilm = (film) => {
-    filmList.value.pop(film);
+    filmList.value.splice(film, 1);
 };
 
 </script>
