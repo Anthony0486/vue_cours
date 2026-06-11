@@ -8,6 +8,8 @@ import StyleForm from './StyleForm.vue';
 import WatchList from './WatchList.vue';
 import Todo from './Todo.vue';
 import Meteo from './Meteo.vue';
+import OneFriend from './OneFriend.vue';
+import Friends from './Friends.vue';
 // const random = function(){
 //     let result = Math.random();
 //     if (result < 0.5){
@@ -42,6 +44,8 @@ const showUserName = computed(() => {
 </script>
 
 <template>
+  <Friends/>
+  <hr/>
   <Meteo/>
   <hr/>
   <Todo/>
@@ -53,10 +57,10 @@ const showUserName = computed(() => {
   <Colorcards/>
   <hr/>
   <div class="p-8 pt-8 flex  items-center justify-center gap-4 counter-card card bg-base-100 shadow-xl">
-  <h1 class="p-8 text-3xl font-bold md:text-4xl">Compteur ➕</h1>
-    <button v-on:click="increment" class="btn btn-success">+</button>
+  <h1 class="p-8 text-3xl uppercase font-bold md:text-4xl tracking-[0.1em]">Compteur ➕</h1>
+    <button v-on:click="increment" class="btn btn-warning">+</button>
   <div class="badge badge-neutral">{{ counter }}</div>
-  <button v-on:click="decrement" class="btn btn-error">-</button>
+  <button v-on:click="decrement" class="btn btn-primary">-</button>
   </div>
   <div class="p-8 pt-8 flex  items-center justify-center gap-4 counter-card card bg-base-100 shadow-xl">
     <p>{{ showUserName }}</p>

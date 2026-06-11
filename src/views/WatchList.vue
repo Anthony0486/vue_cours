@@ -15,7 +15,7 @@ const deleteFilm = (film) => {
 
 <template>
 <div class="p-8 pt-8 flex flex-col  items-center justify-center gap-4 counter-card">
-<h1 class="p-8 text-3xl font-bold md:text-4xl">WatchList &#127916</h1>
+<h1 class="p-8 text-3xl uppercase font-bold md:text-4xl tracking-[0.1em]">WatchList &#127916</h1>
 <p v-if="filmList.length === 0" class="py-4"><strong>Vous n'avez pas encore de film dans votre liste</strong></p>
 <ul v-else>
 <li v-for="film in filmList">

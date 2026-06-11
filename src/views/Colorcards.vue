@@ -19,7 +19,7 @@ const selectionCard = (card) => {
 
 <template>
 <div class="p-8 pt-8 flex  items-center justify-center gap-4 counter-card card bg-base-100 shadow-xl">
-<h1 class="p-8 text-3xl font-bold md:text-4xl">Color Cards 🎨</h1>
+<h1 class="p-8 text-3xl uppercase font-bold md:text-4xl tracking-[0.1em]">Color Cards 🎨</h1>
   <div @click="selectionCard(1)" :style="{backgroundColor: selectCard1 ? 'orange' : 'teal'}" class="badge p-5 m-5">
   Card 1
 </div>

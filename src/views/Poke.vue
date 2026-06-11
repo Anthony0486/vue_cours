@@ -50,7 +50,7 @@ onMounted(() => {
     <div class="mb-8 flex items-end justify-between gap-4">
       <div>
         <p class="text-sm uppercase tracking-[0.3em] text-base-content/60">PokeAPI</p>
-        <h1 class="text-3xl font-bold md:text-4xl">Pokemon GEN 1</h1>
+        <h1 class="p-8 text-3xl uppercase font-bold md:text-4xl tracking-[0.1em]">Pokemon GEN 1</h1>
       </div>
       <div class="badge badge-primary badge-lg">{{ pokeList.length }} résultats</div>
     </div>

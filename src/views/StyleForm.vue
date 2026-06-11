@@ -13,12 +13,12 @@ const classValue = ref('');
 
 <template>
     <div class="p-8 pt-8 flex flex-col  items-center justify-center gap-4 counter-card">
-      <h1 class="p-8 text-3xl font-bold md:text-4xl">Style dynamique ⚡</h1>
+      <h1 class="p-8 text-3xl uppercase font-bold md:text-4xl tracking-[0.1em]">Style dynamique ⚡</h1>
       <input v-model="classValue" type="text" placeholder="Tappez 'hello' ou 'world' pour modifier le style" class="input input-bordered w-full max-w-xs" />
 <p :class="classValue" class="py-4"><strong>Hello</strong></p>
 <input type="text" v-model="colorValue" placeholder="Tappez une couleur pour modifier le style" class="input input-bordered w-full max-w-xs" />
 <p :style="{backgroundColor: colorValue}" class="py-4"><strong>World!</strong></p>
-<button @click="displayTitle" class="btn btn-primary">Afficher/Cacher le titre</button>
+<button @click="displayTitle" class="btn btn-secondary">Afficher/Cacher le titre</button>
 <h1 :class="isDisplayed ? '' : 'hidden'" class="p-8 text-3xl font-bold md:text-4xl">Ceci est un titre</h1>
 </div>
 </template>

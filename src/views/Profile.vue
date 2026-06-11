@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-5xl font-bold">Profil</h1>
+  <h1 class="p-8 text-3xl uppercase font-bold md:text-4xl tracking-[0.1em]">Profil</h1>
 <div class="card card-side bg-base-100 shadow-sm">
   <figure>
     <img

@@ -14,7 +14,7 @@ const deleteTask = (task) => {
 
 <template>
   <div class="p-8 pt-8 flex flex-col  items-center justify-center gap-4 counter-card">
-    <h1 class="p-8 text-3xl font-bold md:text-4xl">Liste des tâches 📝</h1>
+    <h1 class="p-8 text-3xl uppercase font-bold md:text-4xl tracking-[0.1em]">Liste des tâches 📝</h1>
     <p v-if="taskList.length === 0" class="py-4"><strong>Vous n'avez pas encore de tâches dans votre liste</strong></p>
     <ul v-else>
 <li v-for="task in taskList">
